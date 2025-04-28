@@ -7,10 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
-import Login from "./pages/Admin/Login";
-import ProductsAdmin from "./pages/Admin/Products";
-import OrdersAdmin from "./pages/Admin/Orders";
-import CustomersAdmin from "./pages/Admin/Customers";
+import Login from "./pages/admin/Login";
+import ProductsAdmin from "./pages/admin/Products";
+import OrdersAdmin from "./pages/admin/Orders";
+import CustomersAdmin from "./pages/admin/Customers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
