@@ -44,8 +44,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">أرقام الهاتف</h3>
-                  <p className="text-foreground/70">+20 101 234 5678</p>
-                  <p className="text-foreground/70">+20 111 987 6543</p>
+                  <p className="text-foreground/70">+201155343496</p>
+                  <p className="text-foreground/70">+201000464429</p>
                 </div>
               </div>
               
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">البريد الإلكتروني</h3>
-                  <p className="text-foreground/70">info@jeansstore.com</p>
+                  <p className="text-foreground/70">hmdyans47@gmail.com</p>
                   <p className="text-foreground/70">support@jeansstore.com</p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-lg">العنوان</h3>
                   <p className="text-foreground/70">
-                    15 شارع محمد فريد، وسط البلد، القاهرة، مصر
+                    الفيوم _ المسله
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-4">تابعنا على وسائل التواصل الاجتماعي</h2>
               <div className="flex space-x-4 rtl:space-x-reverse">
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/profile.php?id=100010571233408&locale=ar_AR" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-secondary p-3 rounded-full hover:bg-secondary/70 transition-colors"
@@ -85,7 +85,7 @@ const Contact = () => {
                   <Facebook size={24} />
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/anashamdy9999?igsh=dTd1OGxibDBibG05" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-secondary p-3 rounded-full hover:bg-secondary/70 transition-colors"

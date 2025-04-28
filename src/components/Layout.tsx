@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ShoppingBag, Home, Phone } from 'lucide-react';
@@ -22,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <h1 className="text-2xl md:text-3xl font-bold neon-text">متجر الجينز</h1>
+              <h1 className="text-2xl md:text-3xl font-bold neon-text">Jeans Zone</h1>
             </Link>
           </div>
 
