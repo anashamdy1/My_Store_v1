@@ -1,38 +1,38 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Products from "./pages/Products";
-import Contact from "./pages/Contact";
+import { toaster } from "@/components/ui/toaster";
+import { toaster as sonner } from "@/components/ui/sonner";
+import { tooltipprovider } from "@/components/ui/tooltip";
+import { queryclient, queryclientprovider } from "@tanstack/react-query";
+import { browserrouter, routes, route } from "react-router-dom";
+import index from "./pages/index";
+import products from "./pages/products";
+import contact from "./pages/contact";
 import login from "./pages/admin/login";
-import productsAdmin from "./pages/admin/products";
-import ordersAdmin from "./pages/admin/orders";
-import customersAdmin from "./pages/admin/customers";
-import NotFound from "./pages/NotFound";
+import productsadmin from "./pages/admin/products";
+import ordersadmin from "./pages/admin/orders";
+import customersadmin from "./pages/admin/customers";
+import notfound from "./pages/notfound";
 
-const queryClient = new QueryClient();
+const queryclient = new queryclient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/admin/login" element={<login_t />} />
-          <Route path="/admin/products" element={<productsadmin_t />} />
-          <Route path="/admin/orders" element={<ordersadmin_y />} />
-          <Route path="/admin/customers" element={<customersadmin_t />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+const app = () => (
+  <queryclientprovider client={queryclient}>
+    <tooltipprovider>
+      <toaster />
+      <sonner />
+      <browserrouter>
+        <routes>
+          <route path="/" element={<index />} />
+          <route path="/products" element={<products />} />
+          <route path="/contact" element={<contact />} />
+          <route path="/admin/login" element={<login />} />
+          <route path="/admin/products" element={<productsadmin />} />
+          <route path="/admin/orders" element={<ordersadmin />} />
+          <route path="/admin/customers" element={<customersadmin />} />
+          <route path="*" element={<notfound />} />
+        </routes>
+      </browserrouter>
+    </tooltipprovider>
+  </queryclientprovider>
 );
 
-export default App;
+export default app;
